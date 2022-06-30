@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1" style="width: 200px;height: 200px;text-align: center;border-collapse: collapse">
+    <tr>
+        <td colspan="4" style="height:20px;width: 300px";><input type="text" id="manHinh" style="text-align: end"></td>
+
+    </tr>
+    <tr>
+        <td><button type="button" onclick="inputNumber('7')">7</button></td>
+        <td><button type="button" onclick="inputNumber('8')">8</button></td>
+        <td><button type="button" onclick="inputNumber('9')">9</button></td>
+        <td><button type="button" onclick="inputNumber('/')">/</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="inputNumber('4')">4</button></td>
+        <td><button type="button" onclick="inputNumber('5')">5</button></td>
+        <td><button type="button" onclick="inputNumber('6')">6</button></td>
+        <td><button type="button" onclick="inputNumber('*')">*</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="inputNumber('1')">1</button></td>
+        <td><button type="button" onclick="inputNumber('2')">2</button></td>
+        <td><button type="button" onclick="inputNumber('3')">3</button></td>
+        <td><button type="button" onclick="inputNumber('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="reset('AC')">AC</button></td>
+        <td><button type="button" onclick="ketqua()">=</button></td>
+        <td><button type="button" onclick="inputNumber(0)">0</button></td>
+        <td><button type="button" onclick="inputNumber('+')">+</button></td>
+
+    </tr>
+</table>
+
+<script>
+    function inputNumber (duLieuNhap) {
+        document.getElementById("manHinh").value+=duLieuNhap;
+    }
+    function reset(){
+        document.getElementById("manHinh").value=''
+    }
+    function ketqua(){
+        let duLieu = document.getElementById("manHinh").value;
+        let tinhToan = eval(duLieu)
+        document.getElementById("manHinh").value=tinhToan
+    }
+</script>
+</body>
+</html>
+</body>
+</html>
